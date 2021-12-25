@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1640456546 source:c:\users\renat\documents\engenharia informatica - 1º ano\programação 1\pp1-covid19\main.c
+	<stdio.h>
+	<stdlib.h>
+	<locale.h>
+
+1640457385 source:c:\users\renat\documents\engenharia informatica - 1º ano\programação 1\pp1-covid19\funcoesgenericas.c
+	<stdio.h>
+	<string.h>
+	"funcoesGenericas.h"
+
+1640457597 c:\users\renat\documents\engenharia informatica - 1º ano\programação 1\pp1-covid19\funcoesgenericas.h
+
