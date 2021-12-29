@@ -24,7 +24,7 @@ void lerSring(char msg[], char texto[], int tamanho, int obrigatorio)
 
 void escreverData (tipoData data)
 {
-    printf("%02d-%02d-%d", data.dia, data.mes, data.ano);
+    printf("%02d/%02d/%d", data.dia, data.mes, data.ano);
 }
 
 tipoData lerData(char msg[], int minAno, int maxAno)
@@ -38,7 +38,7 @@ tipoData lerData(char msg[], int minAno, int maxAno)
         do
         {
             printf("%s", msg);
-            controlo = scanf("%d-%d-%d", &data.dia, &data.mes, &data.ano);
+            controlo = scanf("%d/%d/%d", &data.dia, &data.mes, &data.ano);
             limpaBuffer();
             if (controlo != 3) // retorno do scanf
                 printf("\nERRO: Formato de Data Inválido.\n");
@@ -102,9 +102,7 @@ int lerInteiro (char msg[], int limMin, int limMax)
         controlo = scanf("%d", &num);
         limpaBuffer();
         if (controlo != 1 || num < limMin || num > limMax)
-        {
             printf("\n\nERRO: O valor introduzido está fora do intervalo solicitado.");
-        }
     }
     while (controlo != 1 || num < limMin || num > limMax);
     return num;
@@ -121,9 +119,7 @@ float lerFloat (char msg[], float limMin, float limMax)
         controlo = scanf("%f", &num);
         limpaBuffer();
         if (controlo != 1 || num < limMin || num > limMax)
-        {
             printf("\n\nERRO: O valor introduzido está fora do intervalo solicitado.");
-        }
     }
     while (controlo != 1 || num < limMin || num > limMax);
     return num;

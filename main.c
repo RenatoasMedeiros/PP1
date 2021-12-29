@@ -3,6 +3,7 @@
 #include <locale.h>
 
 #include "funcoesGenericas.h"
+#include "gestaoMenu.h"
 
 int main()
 {
